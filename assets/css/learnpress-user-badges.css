@@ -1,0 +1,78 @@
+.bo-badge {
+    background: #fed44e;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 40% !important;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .bo-badge.beginner,
+  .bo-badge.intermediate,
+  .bo-badge.advanced,
+  .bo-badge.star {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.05 15.99'%3E%3Ctitle%3Eif_189_FormStar_183307%3C/title%3E%3Cg id='Icons_with_numbers' data-name='Icons with numbers'%3E%3Cg id='Group'%3E%3Cpath id='Star_240_copy' data-name='Star 240 copy' d='M8,12,3,16,5,9.52,0,6H6L8,0l2,6H16L11,9.52,13,16Z' style='fill:%23f3ba49'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .bo-badge .ribbon {
+    background: #f16767;
+    height: 70%;
+    width: 56%;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+  }
+  .bo-badge .ribbon span {
+    color: #ffffff;
+    text-align: center;
+    margin: auto 0 10%;
+    font-size: 0.8em;
+  }
+  .bo-badge .ribbon:after, .bo-badge .ribbon:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-style: solid;
+    border-width: 56px 56px 0 0;
+    border-color: #f16767 transparent transparent transparent;
+    margin-top: -2px;
+  }
+  .bo-badge .ribbon:before {
+    left: auto;
+    right: 0;
+    border-width: 0 56px 56px 0;
+    border-color: transparent #f16767 transparent transparent;
+  }
+  .bo-badge .progressbar {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% !important;
+    height: 90% !important;
+  }
+  .bo-badge .progressbar .ldBar-label {
+    display: none;
+  }
+  
+  .lpub-total-points {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      display: inline-block;
+      line-height: 153px;
+      vertical-align: middle;
+      color: #906000;
+      font-size: 2em;
+  }
+  
