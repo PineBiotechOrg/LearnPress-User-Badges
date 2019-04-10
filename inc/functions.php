@@ -13,7 +13,7 @@ function learnpress_render_user_badge( $user_id = 0 ) {
     if( function_exists('bp_is_active') ) {
         $user_id = bp_displayed_user_id();
     }
-    $points = mycred_get_users_total_balance( $user_id );
+    $points = mycred_get_users_balance( $user_id );
     $badge  = false;
     $max_points = 10000;
 
